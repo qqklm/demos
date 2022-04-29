@@ -66,6 +66,7 @@ public class PgSqlDataSource {
         return new JdbcTemplate(dataSource);
     }
 
+    @Primary
     @Bean(name = PG_MAPPER_FACTORY_NAME)
     public MapperFactory mapperFactory() {
         return new MapperFactory();

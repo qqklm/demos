@@ -29,7 +29,7 @@ class FluentMybatisApplicationTests {
             username = "root",
             password = "wb_239500",
             dbType = DbType.MYSQL,
-            // entity和dao的package,多数据源下该属性应该一致，否则生成的bean会有多个重名，区分用entitySuffix属性区分
+            // entity和dao的package
             basePack = "com.github.qqklm.fluentmybatis.mysql",
             // 设置哪些表要生成Entity文件
             tables = {@Table(value = "user")},
@@ -54,7 +54,7 @@ class FluentMybatisApplicationTests {
             // 对于MySQL无需指定，但是对于类似pg等一定要指定
             schema = "nifi",
             dbType = DbType.POSTGRE_SQL,
-            // entity和dao的package,多数据源下该属性应该一致，否则生成的bean会有多个重名，区分用entitySuffix属性区分
+            // entity和dao的package
             basePack = "com.github.qqklm.fluentmybatis.pg",
             // 设置哪些表要生成Entity文件
             tables = {@Table(value = "data_from")},
