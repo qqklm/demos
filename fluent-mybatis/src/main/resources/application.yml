@@ -1,7 +1,14 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: wb_239500
-    url: jdbc:mysql://192.168.0.54:3306/wb_test
+    mysql:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: wb_239500
+      jdbc-url: jdbc:mysql://192.168.0.54:3306/wb_test?serverTimezone=UTC
+
+    pg:
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: wb_239500
+      jdbc-url: jdbc:postgresql://192.168.0.54:5432/postgres?currentSchema=nifi
 

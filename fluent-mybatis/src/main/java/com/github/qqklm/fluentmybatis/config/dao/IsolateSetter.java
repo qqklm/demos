@@ -1,4 +1,4 @@
-package com.github.qqklm.fluentmybatis.config;
+package com.github.qqklm.fluentmybatis.config.dao;
 
 import cn.org.atool.fluent.mybatis.base.IEntity;
 import cn.org.atool.fluent.mybatis.base.crud.IDefaultSetter;

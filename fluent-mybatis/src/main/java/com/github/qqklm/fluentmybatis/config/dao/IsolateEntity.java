@@ -1,10 +1,9 @@
-package com.github.qqklm.fluentmybatis.config;
-
-import java.util.Date;
+package com.github.qqklm.fluentmybatis.config.dao;
 
 /**
  * entity的统一处理,比如使用雪花算法设置ID，设置新增人、设置修改人
- * 此处的接口字段应该和表的列对应的Java字段一致，返回值应该满足lombok需求，让其通过@Data和@Accessors注解生成的方法满足接口实现需求
+ * 此处的接口字段应该和表的列对应的Java字段一致，返回值应该满足lombok需求，
+ * 让其通过@Data和@Accessors注解生成的方法满足接口实现需求
  *
  * @author wb
  * @date 2022/4/25 11:21
